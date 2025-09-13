@@ -1,8 +1,8 @@
 import { Link } from "react-router"
 import { Button } from "@/components/ui/button"
-import { SearchBox } from "../blocks"
+import { SearchBox } from "../../blocks"
 
-export default function Header() {
+export function Header() {
   return (
     <header className="bg-white py-2 px-10 border-b border-gray-400">
       <div className="flex justify-between items-center">
