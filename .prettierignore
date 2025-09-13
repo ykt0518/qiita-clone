@@ -1,0 +1,12 @@
+node_modules
+build
+.react-router
+dist
+coverage
+*.min.js
+*.min.css
+package-lock.json
+
+# 自動生成ファイル
+app/types/
+scripts
