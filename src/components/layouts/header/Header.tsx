@@ -8,7 +8,7 @@ export function Header() {
       <div className="flex justify-between items-center">
         <div className="bg-green-500 py-0.5 px-4 rounded-sm">
           <Link to="/" className="text-2xl text-white font-bold">
-            Qiita
+            Qiita Clone
           </Link>
         </div>
         <div className="flex items-center gap-2">
