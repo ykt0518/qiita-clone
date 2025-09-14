@@ -1,1 +1,7 @@
+export * from "./IconProps"
 export * from "./SearchIcon"
+export * from "./BellIcon"
+export * from "./TabIcon"
+export * from "./MenuIcon"
+export * from "./PencilIcon"
+export * from "./SettingIcon"
