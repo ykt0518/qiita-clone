@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { BellIcon, MenuIcon, PencilIcon, SettingIcon } from "@/components/icons"
+import { BellIcon, MenuIcon, PencilIcon, SettingIcon, TabIcon } from "@/components/icons"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -96,8 +96,11 @@ export function RightMenuUserActions() {
             <a href="/drafts">ログアウト</a>
           </DropdownMenuItem>
           <DropdownMenuItem asChild className="font-bold cursor-pointer hover:opacity-80 duration-300">
-            <a href="/" target="_blank" rel="noopener noreferrer">
+            <a href="/" target="_blank" className="flex items-center" rel="noopener noreferrer">
               Qiita CLI
+              <span className="flex-shrink-0">
+                <TabIcon size="sm" color="gray" />
+              </span>
             </a>
           </DropdownMenuItem>
         </DropdownMenuContent>
@@ -121,8 +124,11 @@ export function RightMenuUserActions() {
             <a href="/drafts">下書き一覧</a>
           </DropdownMenuItem>
           <DropdownMenuItem asChild className="font-bold cursor-pointer hover:opacity-80 duration-300">
-            <a href="/" target="_blank" rel="noopener noreferrer">
+            <a href="/" target="_blank" className="flex items-center" rel="noopener noreferrer">
               記事をGitHubで管理
+              <span className="flex-shrink-0">
+                <TabIcon size="sm" color="gray" />
+              </span>
             </a>
           </DropdownMenuItem>
         </DropdownMenuContent>

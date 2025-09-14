@@ -10,7 +10,7 @@ export function Header({ isAuthenticated = false }: HeaderProps) {
   const navigation = isAuthenticated ? [...AUTH_NAVIGATION, ...COMMON_NAVIGATION] : COMMON_NAVIGATION
 
   return (
-    <header className="bg-white py-2 px-10 border-b border-gray-400">
+    <header className="bg-white pt-2 px-10 border-b border-gray-400">
       <div className="flex justify-between items-center">
         <div className="bg-green-500 py-0.5 px-4 rounded-sm">
           <Link to="/" className="text-2xl text-white font-bold">
