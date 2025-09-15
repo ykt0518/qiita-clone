@@ -64,7 +64,6 @@ export const FOOTER_NAVIGATION: FooterNavigationProps[] = [
       { label: "Facebook", href: "https://www.facebook.com/qiita/", external: true },
       { label: "YouTube", href: "https://www.youtube.com/@qiita5366", external: true },
       { label: "ポッドキャスト", href: "https://open.spotify.com/show/4E7yCLeCLeQUsNqM4HXFXA", external: true },
-      { label: "公式イベント", to: "/official-events", external: false },
     ],
   },
   {
