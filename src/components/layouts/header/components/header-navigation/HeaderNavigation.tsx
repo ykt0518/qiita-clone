@@ -1,8 +1,8 @@
 import { Link, useLocation } from "react-router"
-import { COMMON_NAVIGATION, AUTH_NAVIGATION } from "./HeaderNavigationItems"
 import { TabIcon } from "@/components/icons"
+import type { HeaderNavigationProps } from "./HeaderNavigationProps"
 
-export function HeaderNavigation({ links }: { links: typeof COMMON_NAVIGATION | typeof AUTH_NAVIGATION }) {
+export function HeaderNavigation({ links }: { links: HeaderNavigationProps[] }) {
   const location = useLocation()
 
   return (
@@ -23,7 +23,7 @@ export function HeaderNavigation({ links }: { links: typeof COMMON_NAVIGATION | 
               </a>
             </li>
           ) : link.to ? (
-            <li>
+            <li key={crypto.randomUUID()}>
               <Link
                 to={link.to}
                 className="relative inline-block pt-1 pb-2 px-4 text-gray-500 font-medium hover:text-gray-900 duration-300">
