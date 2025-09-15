@@ -4,6 +4,7 @@ export type FooterNavigationProps = {
 }
 
 export type FooterNavigationItemProps = {
+  icon?: React.ReactNode
   label: string
   href?: string
   to?: string

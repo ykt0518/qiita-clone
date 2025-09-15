@@ -1,3 +1,4 @@
+import { XIcon } from "@/components/icons"
 import type { FooterNavigationProps } from "./FooterNavigationProps"
 
 export const FOOTER_NAVIGATION: FooterNavigationProps[] = [
@@ -42,9 +43,24 @@ export const FOOTER_NAVIGATION: FooterNavigationProps[] = [
   {
     title: "公式アカウント",
     items: [
-      { label: "Qiita（キータ）公式", href: "https://x.com/qiita", external: true },
-      { label: "Qiita マイルストーン", href: "https://x.com/qiita_milestone", external: true },
-      { label: "Qiita 人気の投稿", href: "https://x.com/qiitapoi", external: true },
+      {
+        icon: <XIcon size="xs" color="white" />,
+        label: "Qiita（キータ）公式",
+        href: "https://x.com/qiita",
+        external: true,
+      },
+      {
+        icon: <XIcon size="xs" color="white" />,
+        label: "Qiita マイルストーン",
+        href: "https://x.com/qiita_milestone",
+        external: true,
+      },
+      {
+        icon: <XIcon size="xs" color="white" />,
+        label: "Qiita 人気の投稿",
+        href: "https://x.com/qiitapoi",
+        external: true,
+      },
       { label: "Facebook", href: "https://www.facebook.com/qiita/", external: true },
       { label: "YouTube", href: "https://www.youtube.com/@qiita5366", external: true },
       { label: "ポッドキャスト", href: "https://open.spotify.com/show/4E7yCLeCLeQUsNqM4HXFXA", external: true },

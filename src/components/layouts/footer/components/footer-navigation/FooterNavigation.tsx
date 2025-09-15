@@ -12,7 +12,12 @@ export function FooterNavigation() {
             {list.items.map(item =>
               item.external ? (
                 <li key={crypto.randomUUID()}>
-                  <a href={item.href} target="_blank" rel="noopener noreferrer" className="block py-1 hover:underline">
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-0.5 py-1 hover:underline">
+                    {item.icon && <span className="flex-shrink-0">{item.icon}</span>}
                     {item.label}
                   </a>
                 </li>
