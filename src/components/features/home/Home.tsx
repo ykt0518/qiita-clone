@@ -5,7 +5,7 @@ export function Home() {
   const { items, loading, error } = useArticle(20)
 
   if (loading) return <div>読み込み中…</div>
-  if (loading) return <div>エラー：{error}</div>
+  if (error) return <div>エラー：{error}</div>
 
   return (
     <>
