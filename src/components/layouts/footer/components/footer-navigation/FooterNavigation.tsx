@@ -6,7 +6,7 @@ export function FooterNavigation() {
   return (
     <nav className="flex gap-12">
       {FOOTER_NAVIGATION.map((list: FooterNavigationProps) => (
-        <div>
+        <div key={crypto.randomUUID()}>
           <p className="text-xl font-bold">{list.title}</p>
           <ul className="mt-2">
             {list.items.map(item =>

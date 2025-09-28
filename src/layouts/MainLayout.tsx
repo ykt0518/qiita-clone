@@ -6,7 +6,7 @@ export function MainLayout() {
   return (
     <>
       <Header isAuthenticated={true} />
-      <main className="max-w-[1640px] min-h-screen py-3 px-4 flex flex-col">
+      <main className="min-h-screen py-3 px-4 bg-[#f5f6f6] flex flex-col">
         <Outlet />
       </main>
       <Footer />
