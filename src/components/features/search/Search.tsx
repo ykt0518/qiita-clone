@@ -1,6 +1,7 @@
-import { ArticleCard } from "@/components/blocks"
+import { ArticleList } from "@/components/blocks"
 import { useLocation } from "react-router"
 import { useSearch } from "./hooks/use-search"
+import { Inner } from "@/components/layouts"
 
 export function Search() {
   const location = useLocation()
@@ -14,15 +15,9 @@ export function Search() {
   }
 
   return (
-    <>
+    <Inner width="auto">
       <h2 className="">「{query}」の検索結果</h2>
-      <ul className="space-y-6">
-        {items.map(item => (
-          <li key={item.id} className="bg-white pt-4 px-6 rounded-xl">
-            <ArticleCard {...item} />
-          </li>
-        ))}
-      </ul>
-    </>
+      <ArticleList items={items} />
+    </Inner>
   )
 }

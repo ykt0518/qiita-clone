@@ -1,4 +1,5 @@
-import { ArticleList } from "./components/article-list"
+import { Inner } from "@/components/layouts"
+import { ArticleList } from "@/components/blocks"
 import { useArticle } from "./hooks/use-article"
 
 export function Home() {
@@ -8,9 +9,9 @@ export function Home() {
   if (error) return <div>エラー：{error}</div>
 
   return (
-    <>
+    <Inner width="md">
       <h2 className="font-bold">記事一覧</h2>
       <ArticleList items={items} />
-    </>
+    </Inner>
   )
 }
