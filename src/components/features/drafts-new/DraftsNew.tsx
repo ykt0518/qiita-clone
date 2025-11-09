@@ -2,11 +2,14 @@ import { IconsArea } from "./components/icons-area/IconsArea"
 import { MarkdownArea } from "./components/markdown-area/MarkdownArea"
 import { TextArea } from "./components/text-area/TextArea"
 import { TitleArea } from "./components/title-area/TitleArea"
+import { useDraftsNew } from "./hooks/use-drafts-new"
 
 export function DraftsNew() {
+  const { handleSubmit } = useDraftsNew()
+
   return (
     <>
-      <form action="">
+      <form onSubmit={handleSubmit}>
         <TitleArea />
         <IconsArea />
         <div className="flex">
