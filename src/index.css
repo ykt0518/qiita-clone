@@ -118,3 +118,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@theme {
+  --color-green-500: #357a00;
+
+  --color-primary: var(--color-green-500);
+}
